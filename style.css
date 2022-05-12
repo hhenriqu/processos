@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*=== GERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+/*=== HEADER === */
+
+body {
+  /* overflow-x: hidden; */
+  min-width: 32rem;
+  max-width: 136.6rem;
+  position: relative;
+  display: flex;
+}
+
+/* Title Menu */
+div .rectanglemenu {
+  width: 22rem;
+  height: 6.8rem;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: linear-gradient(
+    180deg,
+    rgb(255, 179, 84) 0%,
+    rgb(238, 122, 58) 100%
+  );
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+}
+
+div.menu {
+  width: 22rem;
+  height: 162rem;
+
+  margin-top: 6.8rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+img.logomenu {
+  width: 20rem;
+  padding-left: 12px;
+}
+
+div.menuinfo {
+  margin-top: -2px;
+  padding: 0;
+}
+
+div.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 2.4rem;
+
+  width: 21.8rem;
+  height: 3.5rem;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+  border-right: hidden;
+
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #725c5c;
+}
+
+div.infos:nth-child(1) {
+  border-top: hidden;
+}
+
+div.infos:nth-child(5) {
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #725c5c;
+  background: #fdf1eb;
+  display: flex;
+}
+
+div.infos:nth-child(5) p {
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #725c5c;
+
+  display: flex;
+}
+
+div.selected {
+  width: 0.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: -2.4rem;
+  gap: 2.9rem;
+
+  background: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+}
+
+/* Top */
+div.rectangletop {
+  width: 100%;
+  max-width: 114.6rem;
+  min-height: 6.8rem;
+
+  background: hsl(21, 81%, 96%);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.titles {
+  max-width: 64.3rem;
+
+  position: relative;
+  left: 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-right: 7.4rem;
+}
+
+div.titles h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #725c5c;
+}
+
+div.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+div.idiombox {
+  width: 9.7rem;
+  height: 3.4rem;
+
+  border: 0.1rem solid hsl(0, 0%, 80%);
+  border-radius: 0.3rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-right: 2.2rem;
+}
+
+div.idiombox p {
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+  color: black;
+}
+
+div.login .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+}
+
+div.login .welcome:nth-child(2) {
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+}
+
+div.photo {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  margin-left: 0.5rem;
+}
+
+div.notification p {
+  box-sizing: border-box;
+  width: 1.2rem;
+  height: 1.2rem;
+
+  position: absolute;
+  left: 2.5rem;
+
+  border-radius: 100%;
+  background: red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+img.userphoto {
+  border-radius: 100%;
+}
+
+/* ==== CONTEUDO ==== */
+
+div.content {
+  margin: 20px 45px;
+}
+
+div.wrapper1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.options {
+  width: 24rem;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.buttons {
+  background-color: #ed7839;
+  color: white;
+
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
+  border: hidden;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.buttons p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.citacao {
+  color: #ed7839;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+
+div.content h1 {
+  width: 78.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ed7839;
+
+  margin-bottom: 1.9rem;
+}
+
+div.wrapper2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+}
+
+div.overlay {
+  position: absolute;
+  width: 783px;
+  height: 439px;
+  background: rgba(141, 53, 6, 0.5);
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 3.5rem;
+}
+
+div.video p.titulovideo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.4rem;
+
+  letter-spacing: 0.05em;
+}
+
+div.infoautor {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+
+  margin-bottom: 1.7rem;
+}
+
+img.autorvideo {
+  border-radius: 100%;
+  padding: 0.3rem;
+  border: 2px solid #ed7839;
+}
+
+div.wrappervideo p:nth-child(1) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.4rem;
+}
+
+div.wrappervideo p:nth-child(2) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+div.detalhes {
+  width: 24.2rem;
+  height: 43.9rem;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.detailstitle {
+  width: 100%;
+  height: 4.5rem;
+  background-color: #fdf1eb;
+  border-bottom: 0.1rem solid hsl(0, 0%, 80%);
+
+  display: flex;
+  align-items: center;
+}
+
+div.detailstitle p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #4e4e4e;
+
+  margin: 1.5rem;
+}
+
+div.infodetalhes {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: black;
+  height: 360 px;
+
+  margin: 1rem;
+}
+
+div.infodetalhes p {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 0.3rem;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #4e4e4e;
+}
+
+div.resumo {
+  width: 100%;
+  height: 18.9rem;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3rem;
+}
+
+div.resumo p:nth-child(2) {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+
+  color: #5c5c5c;
+
+  margin: 1.5rem;
+}
+
+div.discussoes {
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+div.discussoes p:nth-child(2) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ed7839;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.9rem;
+}
+
+div.icons {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem;
+}
+
+div.discussoes p:nth-child(4) {
+  display: flex;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+
+  color: #5c5c5c;
+
+  margin: 1.5rem;
+}
+
+div.pergunta {
+  width: 100%;
+  height: 62.1rem;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+div.line {
+  position: relative;
+  top: 1.75rem;
+  width: 102.7rem;
+  border: 1px solid #e7e7e7;
+}
+
+button.criartopico {
+  width: 13.3rem;
+  min-height: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+
+  color: #fdf1eb;
+
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border: hidden;
+  border-radius: 4px;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+
+  z-index: 1;
+}
+
+button.criartopico svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+div.questionbox {
+  width: 102.8rem;
+  height: 14.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  border: 1px solid hsla(0, 0%, 0%, 20%);
+  box-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.12);
+  border-radius: 4px;
+
+  margin: 1.5rem;
+  padding: 2.4rem 1.8rem;
+}
+
+div.questionbox p.assunto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ed7839;
+}
+
+div.questionbox p.autorpergunta {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #5c5c5c;
+  margin: 0px;
+}
+
+div.questionbox p.preview {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #4d4d4d;
+
+  margin: 1rem 0rem;
+}
+
+div.optionspergunta {
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.like {
+  width: 2.7rem;
+  height: 1.9rem;
+
+  background: #ed7839;
+  border-radius: 0.2rem;
+  border: hidden;
+}
+
+div.optionspergunta p.like {
+  font-family: 'Segoe UI', 'Roboto';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  margin: 0px;
+
+  color: #757575;
+}
+
+footer {
+  width: 100%;
+}
